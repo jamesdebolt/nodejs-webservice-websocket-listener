@@ -25,3 +25,7 @@ node server.js --port 1000 --wsUrl ws:localhost://1234
 ## Testing the server
 
 After starting the server as outlined above, navigate to `http://localhost:<PORT>/pop` and see the full JSON of returned highest priority element. Refreshing the page will request the next element.
+
+## Limitations
+
+Coded to requirements of needing to connect to one websocket, and only pop from the queue. Future steps to include allowing multiple sockets, more endpoints exposing more operations on the underlying heap, and moving per-route logic into invidual files
