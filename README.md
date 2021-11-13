@@ -17,11 +17,11 @@ npm install
 node server.js
 ```
 
-The default port of 3000, and default ws connection url of ws://localhost:7777 can be changed with command line arguments:
+The default port of 3000, and default ws connection url of `ws://localhost:7777` can be changed with command line arguments:
 ```shell
 node server.js --port 1000 --wsUrl ws:localhost://1234
 ```
 
 ## Testing the server
 
-After starting the server as outlined above, navigate to http://localhost:<PORT>/pop and see the full JSON of returned highest priority element. Refreshing the page will request the next element.
+After starting the server as outlined above, navigate to `http://localhost:<PORT>/pop` and see the full JSON of returned highest priority element. Refreshing the page will request the next element.
