@@ -14,17 +14,22 @@ This server can be run from the command-line using npm after cloning the project
 
 ```shell
 npm install
-node server.js
+node app.js
 ```
 
 The default port of 3000, and default ws connection url of `ws://localhost:7777` can be changed with command line arguments:
 ```shell
-node server.js --port 1000 --wsUrl ws:localhost://1234
+node app.js --port 1000 --wsUrl ws:localhost://1234
 ```
 
 ## Testing the server
 
 After starting the server as outlined above, navigate to `http://localhost:<PORT>/pop` and see the full JSON of returned highest priority element. Refreshing the page will request the next element.
+
+Alternatively, navigate to the root of the project and execute the following command to run the test suite:
+```shell
+npm run test
+```
 
 ## Limitations
 
